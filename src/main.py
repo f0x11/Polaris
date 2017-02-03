@@ -1,23 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+from body import Body
+
 __author__ = 'f0x11'
 
+MAX_PER_MEMORY = 1024 * 1024
+MAX_PER_CPUS = 0.5
 
-class A(object):
-    pass
-
-
-class T(object):
-    pass
+is_leader = True    # or False
 
 
-class C(object):
-    pass
-
-
-class G(object):
-    pass
-
-
-class U(object):
-    pass
+def main():
+    me = Body()
+    me.live()
