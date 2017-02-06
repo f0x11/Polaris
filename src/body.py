@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 from individual.leader import Leader
 from individual.operator import Operator
+from tornado import ioloop
 
 __author__ = 'f0x11'
 
@@ -17,4 +18,4 @@ class Body(object):
         pass
 
     def live(self):
-        pass
+        ioloop.IOLoop.current().start()
